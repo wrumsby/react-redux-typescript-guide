@@ -1,20 +1,20 @@
 import * as React from 'react';
 
-import { Omit } from '@src/types/react-redux-typescript';
+import { Omit } from 'react-redux-typescript';
 
 interface RequiredProps {
-  count: number,
-  onIncrement: () => any,
+  count: number;
+  onIncrement: () => any;
 }
 
 type Props<T extends RequiredProps> = Omit<T, keyof RequiredProps>;
 
 interface State {
-  count: number,
+  count: number;
 }
 
 export function withState<WrappedComponentProps extends RequiredProps>(
-  WrappedComponent: React.ComponentType<WrappedComponentProps>,
+  WrappedComponent: React.ComponentType<WrappedComponentProps>
 ) {
   const HOC = class extends React.Component<Props<WrappedComponentProps>, State> {
 
@@ -24,7 +24,7 @@ export function withState<WrappedComponentProps extends RequiredProps>(
 
     handleIncrement = () => {
       this.setState({ count: this.state.count + 1 });
-    };
+    }
 
     render() {
       const { handleIncrement } = this;

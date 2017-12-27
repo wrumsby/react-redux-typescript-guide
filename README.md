@@ -22,7 +22,7 @@ Additionally static-typing will make processes of improving your codebase and re
 ### Goals
 - Complete type safety with strict null checking, without failing to `any` type
 - Minimize amount of manually writing type declarations by leveraging [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
-- Reduce redux boilerplate code with [simple utility functions](https://github.com/piotrwitek/react-redux-typescript) using [Generics](https://www.typescriptlang.org/docs/handbook/generics.html) and [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html) features
+- Reduce redux boilerplate code with [simple utility functions](https://github.com/piotrwitek/typesafe-actions) using [Generics](https://www.typescriptlang.org/docs/handbook/generics.html) and [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html) features
 
 ### Playground
 Code examples are generated from the source code in `playground` folder. They are tested with TypeScript compiler with the most recent version of TypeScript and relevant type definitions (like `@types/react` or `@types/react-redux`) to ensure they are still working with recent definitions.
@@ -515,8 +515,7 @@ export default () => (
 
 ```tsx
 import * as React from 'react';
-
-import { Omit } from '@src/types/react-redux-typescript';
+import { Omit } from 'react-redux-typescript';
 
 interface RequiredProps {
   count: number,

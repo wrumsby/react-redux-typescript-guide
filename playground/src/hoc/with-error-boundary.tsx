@@ -6,15 +6,15 @@ interface Props {
 }
 
 interface State {
-  error: Error | null | undefined,
+  error: Error | null | undefined;
 }
 
 interface WrappedComponentProps {
-  onReset: () => any,
+  onReset: () => any;
 }
 
 export function withErrorBoundary(
-  WrappedComponent: React.ComponentType<WrappedComponentProps>,
+  WrappedComponent: React.ComponentType<WrappedComponentProps>
 ) {
   const HOC = class extends React.Component<Props, State> {
 

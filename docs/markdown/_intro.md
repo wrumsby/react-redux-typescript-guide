@@ -2,7 +2,7 @@
 This guide is **NOT** about _"How to write type declarations for every possible variable and expression to have 100% type covered code and waste a lot of time"_.  
 This guide is about **_"How to write type declarations to only the minimum necessary amount of JavaScript code and still get all the benefits of Static Typing"_**.
 
-> found it usefull, want some more? [give it a :star:](https://github.com/piotrwitek/react-redux-typescript-patterns/stargazers)  
+> found it usefull, want some more? [give it a :star:](https://github.com/piotrwitek/react-redux-typescript-guide/stargazers)  
 
 ### [> Changelog](/CHANGELOG.md)  
 
@@ -21,8 +21,8 @@ Additionally static-typing will make processes of improving your codebase and re
 
 ### Goals
 - Complete type safety with strict null checking, without failing to `any` type
-- Minimize amount of manually writing type declarations by leveraging [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
-- Reduce redux boilerplate code with [simple utility functions](https://github.com/piotrwitek/react-redux-typescript) using [Generics](https://www.typescriptlang.org/docs/handbook/generics.html) and [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html) features
+- Minimize the amount of manually writing type declarations by leveraging [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
+- Reduce redux boilerplate code with [simple utility functions](https://github.com/piotrwitek/typesafe-actions) using [Generics](https://www.typescriptlang.org/docs/handbook/generics.html) and [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html) features
 
 ### Playground
 Code examples are generated from the source code in `playground` folder. They are tested with TypeScript compiler with the most recent version of TypeScript and relevant type definitions (like `@types/react` or `@types/react-redux`) to ensure they are still working with recent definitions.
